@@ -1,0 +1,11 @@
+tasks:
+  - name: Default Script Execution
+    command: node tty.js
+  - name: Script Execution using custom input
+    command: echo "hello" | node tty.js
+  - name: Script Execution with echoing output to a file
+    command: node tty.js > output.txt
+  - name: Process Tree
+    command: pstree
+  - name: Process Tree with more detailed output
+    command: ps -x --forest
